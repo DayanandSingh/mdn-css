@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDN</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <H1>Mozila Developer Network</H1>
+    </header>
+    <main>
+        <Article>
+            <h2> CSS Basics </h2>
+            <p>
+                What is CSS ?
+                CSS is a style sheet language. CSS is what you use to selectively style HTML elements. For example, this CSS selects paragraph text, setting the color to red: 
+            </p>     
+            <p class="code">
+                &gt;&gt; p { <br>
+                &gt;&gt; color: red;<br>
+                &gt;&gt; }
+
+            </p>
+            <section>
+                <h3>CSS file I Use for This</h3>
+                <p class="code">
+                    &gt;&gt; p{<br>
+                    &gt;&gt;     color: red;<br>
+                    &gt;&gt;     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;<br>
+                    &gt;&gt; }<br>
+                    &gt;&gt; 
+                    &gt;&gt; .code{<br>
+                    &gt;&gt;     font-family: 'Courier New', Courier, monospace;<br>
+                    &gt;&gt;     background-color:blue;<br>
+                    &gt;&gt;     color: yellowgreen;<br>
+                    &gt;&gt; }<br>
+                </p>
+            </section><hr>
+            <section>
+                <h3>Anatomy of CSS ruleset</h3>
+                <figure>
+                    <img src="./css-declaration-small.png" alt="Anatomy of CSS ruleset" width="400px">
+                    <figcaption>Anatomy of CSS Ruleset</figcaption>
+                </figure>
+                <p>
+                    The whole structure is called a ruleset.    
+                    (The term ruleset is often referred to as just rule.) Note the names of the individual parts: 
+                    <dl>      
+                        <dt>* Selector    </dt>
+                        <dd>
+                            This is the HTML element name at the start of the ruleset. It defines the element(s) to be styled (in this example, `&lt;p&gt;` elements). To style a different element, change the selector.</dd>
+                        <dt>* Declaration  </dt>    
+                        <dd>
+                            This is a single rule like color: red;. It specifies which of the element's properties you want to style.</dd>
+                        <dt>* Properties  </dt>  
+                        <dd>
+                            These are ways in which you can style an HTML element. (In this example, color is a property of the `&lt;p&gt;` elements.) In CSS, you choose which properties you want to affect in the rule.</dd>
+                        <dt>* Property value   </dt> 
+                        <dd>
+                            To the right of the property—after the colon—there is the property value. This chooses one out of many possible appearances for a given property. (For example, there are many color values in addition to `red`.)
+                        </dd>
+                    </dl>
+                    
+                    Note the other important parts of the syntax:
+                    <ul>
+                        <li>
+                            Apart from the selector, each ruleset must be wrapped in curly braces. (`{}`)
+                        </li>
+                        <li>
+                            Within each declaration, you must use a colon (`:`) to separate the property from its value or values.
+                        </li>
+                        <li>
+                            Within each ruleset, you must use a semicolon (`;`) to separate each declaration from the next one.
+                        </li>
+                    </ul>
+                </p>
+            </section>
+        </Article>
+    </main>
+    <footer>
+        <p>&lt;&lt; &copy; Copyright Lucifer &gt;&gt;</p>
+    </footer>
+</body>
+</html>
