@@ -1,7 +1,8 @@
 
 # Lesson 01 CSS First Steps
-
-* [1.1 What is CSS?]()
+|[MDN-CSS](/README.md)|
+|-|
+* [1.1 What is CSS?](./1.1-whatIsCSS/readme.md)
 * [1.2 Getting Started With CSS]()
 * [1.3 How CSS Is Structured]()
 * [1.4 How CSS Work?]()
@@ -34,7 +35,7 @@ Before starting this module, you should have:
 
 This module contains the following articles, which will take you through all the basic theory of CSS, and provide opportunities for you to test out some skills.
 
-[What is CSS?]()    
+[What is CSS?](./1.1-whatIsCSS/readme.md)    
 CSS (Cascading Style Sheets) allows you to create great-looking web pages, but how does it work under the hood? This article explains what CSS is with a simple syntax example and also covers some key terms about the language.
 
 [Getting started with CSS]()    

@@ -7,9 +7,9 @@ Mozila Developer Network - CSS Styling the web
 
 ## 01 Lesson CSS First Steps
 
- ### [OverView]()
+ ### [OverView](./01-lesson/readme.md)
  
- ### 1.1 [What Is CSS?]()
+ ### 1.1 [What Is CSS?](./01-lesson/1.1-whatIsCSS/readme.md)
  
  ### 1.2 [Getting Started With CSS]()
  
