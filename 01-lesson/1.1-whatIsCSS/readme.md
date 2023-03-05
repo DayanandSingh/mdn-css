@@ -126,7 +126,3 @@ Based on your requirements, you can use the browser compatibility table to check
 * [Khronos](https://developer.mozilla.org/en-US/docs/Glossary/Khronos)
 * [CSS Working Group](https://www.w3.org/Style/CSS/)
 * [browser compatibility table for the CSS font-family property](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family#browser_compatibility).
-* 
-* 
-* 
-* 
