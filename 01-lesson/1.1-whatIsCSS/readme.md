@@ -30,6 +30,8 @@
 >* There are other user agents available, such as those that convert HTML and CSS documents into PDFs to be printed.
 * CSS can be used for very basic document text styling — for example, for changing the color and size of headings and links. It can be used to create a layout — for example, turning a single column of text into a layout with a main content area and a sidebar for related information. It can even be used for effects such as animation. Have a look at the links in this paragraph for specific examples.
 
+|[Back to Top](#overview)|
+|-|
 
 ---
 
@@ -62,16 +64,17 @@ A CSS stylesheet will contain many such rules, written one after the other.
     }
 >Note: You can find links to all the CSS property pages (along with other CSS features) listed on the MDN CSS reference. Alternatively, you should get used to searching for "mdn css-feature-name" in your favorite search engine whenever you need to find out more information about a CSS feature. For example, try searching for "mdn color" and "mdn font-size"!
 
-
-
+|[Back to Top](#overview)|
+|-|
 
 ---
 
 ## CSS Modules
 
-
-
 As there are so many things that you could style using CSS, the language is broken down into modules. You'll see reference to these modules as you explore MDN. Many of the documentation pages are organized around a particular module. For example, you could take a look at the MDN reference to the [Background and Borders Module](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders) to find out what its purpose is and the properties and features it contains. In that module, you will also find a link to Specifications that defines the technology (also see the section below).
+
+|[Back to Top](#overview)|
+|-|
 
 ---
 
@@ -86,7 +89,8 @@ New CSS features are developed or specified by the CSS Working Group — sometim
 
 As a newcomer to CSS, it is likely that you will find the CSS specs overwhelming — they are intended for engineers to use to implement support for the features in user agents, not for web developers to read to understand CSS. Many experienced developers would much rather refer to MDN documentation or other tutorials. Nevertheless, it is worth knowing that these specs exist and understanding the relationship between the CSS you are using, the browser support (see below), and the specs.
 
-
+|[Back to Top](#overview)|
+|-|
 
 ---
 
@@ -100,12 +104,16 @@ As a newcomer to CSS, it is likely that you will find the CSS specs overwhelming
 
 Based on your requirements, you can use the browser compatibility table to check how this property is supported across various browsers, or check if your specific browser and the version you have support the property, or if there are any caveats you should be aware of for the browser and version you are using.
 
+|[Back to Top](#overview)|
+|-|
+
 ---
 
 ## Summary
 
 
-
+|[Back to Top](#overview)|
+|-|
 
 
 
