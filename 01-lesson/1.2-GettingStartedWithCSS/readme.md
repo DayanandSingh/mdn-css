@@ -188,15 +188,37 @@ Therefore, it is sometimes best to bypass the element and refer to the class, un
           font-size: 200%;
         }
 
-
-
-
 |[Back to Top](#overview)|
 |-|
 
 ---
 
 ## styling Things based on state
+
+> The final type of styling we shall take a look at in this tutorial is the ability to style things based on their state. A straightforward example of this is when styling links. 
+>* When we style a link, we need to target the `<a>` (anchor) element.
+>* This has different states depending on whether it is unvisited, visited, being hovered over, focused via the keyboard, or in the process of being clicked (activated).
+>* You can use CSS to target these different states — the CSS below styles unvisited links pink and visited links green.
+
+    a:link {
+      color: pink;
+    }
+
+    a:visited {
+      color: green;
+    }
+>* You can change the way the link looks when the user hovers over it, for example by removing the underline, which is achieved by the next rule:
+
+    a:hover {
+      text-decoration: none;
+    }
+
+> Note:     
+>* you will often see mention of accessibility in these lessons and across MDN. When we talk about accessibility we are referring to the requirement for our webpages to be understandable and usable by everyone.     
+>*  Your visitor may well be on a computer with a mouse or trackpad, or a phone with a touchscreen. Or they might be using a screen reader, which reads out the content of the document, or they may need to use much larger text, or be navigating the site using the keyboard only.     
+>*  A plain HTML document is generally accessible to everyone — as you start to style that document it is important that you don't make it less accessible
+
+
 
 |[Back to Top](#overview)|
 |-|

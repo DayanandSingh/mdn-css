@@ -12,7 +12,21 @@ h1 + p {
 p,li{
     /* background-color: #000; */
     color:green;
-}  
+} 
+/* !## Styling things based on State  */
+a:link{
+    color: pink;
+    font-weight: bolder;
+}
+a:visited{
+    color: green;
+}
+a:hover{
+    text-decoration: none;
+}
+
+
+
 li{
     list-style-type: square;
 }
