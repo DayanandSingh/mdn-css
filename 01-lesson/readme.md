@@ -4,6 +4,7 @@
 |-|
 * [1.1 What is CSS?](./1.1-whatIsCSS/readme.md)
 * [1.2 Getting Started With CSS](1.2-GettingStartedWithCSS/readme.md)
+    * [Extra](./1.2-GettingStartedWithCSS/Extra/readme.md)
 * [1.3 How CSS Is Structured]()
 * [1.4 How CSS Work?]()
 * [1.5 Assessment]()

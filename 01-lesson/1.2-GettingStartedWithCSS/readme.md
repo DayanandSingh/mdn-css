@@ -1,6 +1,6 @@
 # Lesson 01 CSS First Steps
 
-## 1.1 What Is CSS?
+## 1.2 Getting Started with Css
 
 |[MDN-CSS](/README.md)|[Lesson 01](../readme.md)|
 |-|-|
@@ -17,6 +17,7 @@
 * [styling Things based on state](#styling-things-based-on-state)
 * [Combining selectors and combinators](#combining-selectors-and-combinators)
 * [Summary](#summary)
+* [Extra](#extra) 
 
 ---
 
@@ -157,6 +158,20 @@ If you don't want those bullets, you can remove them like so:
 ---
 
 ## Summary
+
+|[Back to Top](#overview)|
+|-|
+
+---
+
+## Extra
+
+* [1. List Item Style type](./Extra/1-list-style-type/readme.md)
+* []()
+* []()
+* []()
+* []()
+* []()
 
 |[Back to Top](#overview)|
 |-|
