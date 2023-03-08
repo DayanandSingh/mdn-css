@@ -3,7 +3,7 @@
 |[MDN-CSS](/README.md)|
 |-|
 * [1.1 What is CSS?](./1.1-whatIsCSS/readme.md)
-* [1.2 Getting Started With CSS]()
+* [1.2 Getting Started With CSS](1.2-GettingStartedWithCSS/readme.md)
 * [1.3 How CSS Is Structured]()
 * [1.4 How CSS Work?]()
 * [1.5 Assessment]()
@@ -38,7 +38,7 @@ This module contains the following articles, which will take you through all the
 [What is CSS?](./1.1-whatIsCSS/readme.md)    
 CSS (Cascading Style Sheets) allows you to create great-looking web pages, but how does it work under the hood? This article explains what CSS is with a simple syntax example and also covers some key terms about the language.
 
-[Getting started with CSS]()    
+[Getting started with CSS](1.2-GettingStartedWithCSS/readme.md)    
 In this article, we will take a simple HTML document and apply CSS to it, learning some practical things about the language along the way.
 
 [How CSS is structured]()   
