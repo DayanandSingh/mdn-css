@@ -6,6 +6,9 @@ p{
     /* background-color: aliceblue; */
 
 }
+li{
+    list-style-type: square;
+}
 p,li{
     /* background-color: #000; */
     color:green;

@@ -100,15 +100,28 @@ If you want all paragraphs and all list items to be green, your rule would look 
       color: green;
     }
 
-
-
-
 |[Back to Top](#overview)|
 |-|
 
 ---
 
 ## Changing the default behavior of elements
+
+When we look at a well-marked up HTML document, even something as simple as our example, we can see how the browser is making the HTML readable by adding some `default styling`.   
+> Headings are large and bold and our list has bullets.     
+
+This happens because browsers have `internal stylesheets` containing `default styles`, which they apply to all pages by default; without them all of the text would run together in a clump and we would have to style everything from scratch.     
+>All modern browsers display HTML content by default in pretty much the same way.
+
+However, you will often want something other than the choice the browser has made. This can be done by choosing the HTML element that you want to change and using a CSS rule to change the way it looks.   
+>A good example is `<ul>`, an unordered list. It has list bullets.  
+If you don't want those bullets, you can remove them like so:
+
+    li {
+      list-style-type: none;
+    }
+> [list-style-type](https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type) property is a good property to look at on MDN to see which values are supported.
+
 
 |[Back to Top](#overview)|
 |-|
