@@ -82,6 +82,23 @@ You can test that the CSS works by adding a rule to styles.css. Using your code 
 
 ## Styling HTML Elements
 
+>By making our heading red, we have already demonstrated that we can target and style an HTML element. We do this by targeting an element selector      
+>* — this is a selector that directly matches an HTML element name. 
+>* To target all paragraphs in the document, you would use the `selector p`.    
+
+To turn all paragraphs green, you would use:
+
+    p {
+      color: green;
+    }
+> You can target multiple selectors at the same time by separating the selectors with a comma. 
+
+If you want all paragraphs and all list items to be green, your rule would look like this:
+
+    p,
+    li {
+      color: green;
+    }
 
 
 

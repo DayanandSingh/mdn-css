@@ -1,3 +1,12 @@
 h1{
     color:red;
 }
+p{
+    color: green;
+    /* background-color: aliceblue; */
+
+}
+p,li{
+    /* background-color: #000; */
+    color:green;
+}
