@@ -167,15 +167,29 @@ you would have to add that element to the list of selectors:
 As you can imagine, some classes might be applied to many elements and you don't want to have to keep editing your CSS every time something new needs to take on that style.        
 Therefore, it is sometimes best to bypass the element and refer to the class, unless you know that you want to create some special rules for one element alone, and perhaps want to make sure they are not applied to other things.
 
-   
-
-
 |[Back to Top](#overview)|
 |-|
 
 ---
 
 ## Styling thing Based on their location in document
+
+1. There are times when you will want something to look different based on where it is in the document. 
+>*  there are two `<em>` elements — one inside a paragraph and the other inside a list item.
+>* To select only an `<em>` that is nested inside an `<li>` element, you can use a selector called the descendant combinator, which takes the form of a space between two other selectors
+
+    li em {
+      color: rebeccapurple;
+    }
+>* This selector will select any `<em>` element that is inside (a descendant of) an `<li>`. So in your example document, you should find that the `<em>` in the third list item is now purple, but the one inside the paragraph is unchanged.  
+2. Something else you might like to try is styling a paragraph when it comes directly after a heading at the same hierarchy level in the HTML. To do so, place a + (an adjacent sibling combinator) between the selectors
+
+        h1 + p {
+          font-size: 200%;
+        }
+
+
+
 
 |[Back to Top](#overview)|
 |-|

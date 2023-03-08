@@ -6,13 +6,20 @@ p{
     /* background-color: aliceblue; */
 
 }
-li{
-    list-style-type: square;
+h1 + p {
+    font-size: 200%;
 }
 p,li{
     /* background-color: #000; */
     color:green;
+}  
+li{
+    list-style-type: square;
 }
+li em{
+    color: rebeccapurple;
+}
+
 .special{
     color: orange;
     font-weight: bold;
