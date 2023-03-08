@@ -131,6 +131,45 @@ If you don't want those bullets, you can remove them like so:
 
 ## Adding a class
 
+So far, we have styled elements based on their HTML element names. This works as long as you want all of the elements of that type in your document to look the same.
+>To select a subset of the elements without changing the others, you can add a class to your HTML element and target that class in your CSS.
+1. In your HTML document, add a class attribute to the second list item. Your list will now look like this:
+
+        <ul>
+          <li>Item one</li>
+          <li class="special">Item two</li>
+          <li>Item <em>three</em></li>
+        </ul>
+2. In your CSS, you can target the class of special by creating a selector that starts with a full stop character. Add the following to your CSS file:
+
+        .special {
+          color: orange;
+          font-weight: bold;
+        }
+> What is `class`?  
+>* The `class` global attribute is a space-separated list of the case-sensitive classes of the element.
+>* Classes allow CSS and JavaScript to select and access specific elements via the class selectors or functions like the DOM method `document.getElementsByClassName`.
+
+Sometimes you will see rules with a selector that lists the HTML element selector along with the class:     
+
+    li.special {
+      color: orange;
+      font-weight: bold;
+    }
+>This syntax means "target any li element that has a class of special". If you were to do this, then you would no longer be able to apply the class to a `<span>` or another element by adding the class to it;     
+you would have to add that element to the list of selectors:  
+
+    li.special,
+    span.special {
+      color: orange;
+      font-weight: bold;
+    }
+As you can imagine, some classes might be applied to many elements and you don't want to have to keep editing your CSS every time something new needs to take on that style.        
+Therefore, it is sometimes best to bypass the element and refer to the class, unless you know that you want to create some special rules for one element alone, and perhaps want to make sure they are not applied to other things.
+
+   
+
+
 |[Back to Top](#overview)|
 |-|
 

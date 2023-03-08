@@ -13,3 +13,15 @@ p,li{
     /* background-color: #000; */
     color:green;
 }
+.special{
+    color: orange;
+    font-weight: bold;
+}
+
+li.special{
+    color:salmon;
+}
+
+li.special,span.special{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
