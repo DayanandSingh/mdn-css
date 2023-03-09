@@ -218,14 +218,36 @@ Therefore, it is sometimes best to bypass the element and refer to the class, un
 >*  Your visitor may well be on a computer with a mouse or trackpad, or a phone with a touchscreen. Or they might be using a screen reader, which reads out the content of the document, or they may need to use much larger text, or be navigating the site using the keyboard only.     
 >*  A plain HTML document is generally accessible to everyone — as you start to style that document it is important that you don't make it less accessible
 
-
-
 |[Back to Top](#overview)|
 |-|
 
 ---
 
 ## Combining selectors and combinators
+
+1. It is worth noting that you can combine multiple selectors and combinators together. For example:      
+
+        /* selects any <span> that is inside a <p>, which is inside an <article>  */
+        article p span {
+        }
+    
+        /* selects any <p> that comes directly after a <ul>, which comes directly after an <h1>  */
+        h1 + ul + p {
+        }
+2. You can combine multiple types together, too. Try adding the following into your code:     
+
+        body h1 + p .special {
+          color: yellow;
+          background-color: black;
+          padding: 5px;
+        }
+>This will style any element with a class of special, which is inside a `<p>`, which comes just after an `<h1>`, which is inside a `<body>`. Phew!      
+
+
+
+
+
+
 
 |[Back to Top](#overview)|
 |-|
