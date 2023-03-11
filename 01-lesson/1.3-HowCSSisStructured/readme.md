@@ -516,17 +516,46 @@ body {
 >See if you can add a media query that changes styles based on the viewport width. Change the width of your browser window to see the result.
 
 
-
-
-
-
-
 |[Back to Top](#overview)|
 |-|
 
 ---
 
 ## Shorthands
+
+Some properties like `font`, `background`, `padding`, `border`, and `margin` are called shorthand properties. This is because shorthand properties set several values in a single line.     
+For example, this one line of code:
+```
+/* In 4-value shorthands like padding and margin, the values are applied
+   in the order top, right, bottom, left (clockwise from the top). There are also other
+   shorthand types, for example 2-value shorthands, which set padding/margin
+   for top/bottom, then left/right */
+padding: 10px 15px 15px 5px;
+```
+is equivalent to these four lines of code:
+```
+padding-top: 10px;
+padding-right: 15px;
+padding-bottom: 15px;
+padding-left: 5px;
+```
+
+this One line.
+```
+background: red url(bg-graphic.png) 10px 10px repeat-x fixed;
+```
+is equivalent to these five lines.
+```
+background-color: red;
+background-image: url(bg-graphic.png);
+background-position: 10px 10px;
+background-repeat: repeat-x;
+background-attachment: fixed;
+```
+> Note:      
+Warning: One less obvious aspect of using CSS shorthand is how omitted values reset. A value not specified in CSS shorthand reverts to its initial value. This means an omission in CSS shorthand can override previously set values.
+
+Todo: Try using the declarations (above) in your own CSS exercise to become more familiar with how it works. You can also experiment with different values.
 
 |[Back to Top](#overview)|
 |-|
@@ -535,12 +564,134 @@ body {
 
 ## Comments
 
+As with any coding work, it is best practice to write comments along with CSS. This helps you to remember how the code works as you come back later for fixes or enhancement. It also helps others understand the code.
+
+CSS comments begin with `/* `and end with `*/`. In the example below, comments mark the start of distinct sections of code. This helps to navigate the codebase as it gets larger. With this kind of commenting in place, searching for comments in your code editor becomes a way to efficiently find a section of code.
+```
+/* Handle basic element styling */
+/* -------------------------------------------------------------------------------------------- */
+body {
+  font: 1em/150% Helvetica, Arial, sans-serif;
+  padding: 1em;
+  margin: 0 auto;
+  max-width: 33em;
+}
+
+@media (min-width: 70em) {
+  /* Increase the global font size on larger screens or windows
+     for better readability */
+  body {
+    font-size: 130%;
+  }
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+/* Handle specific elements nested in the DOM */
+div p,
+#id:first-line {
+  background-color: red;
+  border-radius: 3px;
+}
+
+div p {
+  margin: 0;
+  padding: 1em;
+}
+
+div p + p {
+  padding-top: 0;
+}
+```
+"Commenting out" code is also useful for temporarily disabling sections of code for testing. In the example below, the rules for .special are disabled by "commenting out" the code.
+```
+/*.special {
+  color: red;
+}*/
+
+p {
+  color: blue;
+}
+```
+
+
 |[Back to Top](#overview)|
 |-|
 
 ---
 
 ## White Space
+
+White space means actual spaces, tabs and new lines. Just as browsers ignore white space in HTML, browsers ignore white space inside CSS. The value of white space is how it can improve readability.
+
+In the example below, each declaration (and rule start/end) has its own line. This is arguably a good way to write CSS. It makes it easier to maintain and understand CSS.
+```
+body {
+  font: 1em/150% Helvetica, Arial, sans-serif;
+  padding: 1em;
+  margin: 0 auto;
+  max-width: 33em;
+}
+
+@media (min-width: 70em) {
+  body {
+    font-size: 130%;
+  }
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+div p,
+#id:first-line {
+  background-color: red;
+  border-radius: 3px;
+}
+
+div p {
+  margin: 0;
+  padding: 1em;
+}
+
+div p + p {
+  padding-top: 0;
+}
+```
+The next example shows the equivalent CSS in a more compressed format. Although the two examples work the same, the one below is more difficult to read.
+```
+body {font: 1em/150% Helvetica, Arial, sans-serif; padding: 1em; margin: 0 auto; max-width: 33em;}
+@media (min-width: 70em) { body { font-size: 130%;}}
+
+h1 {font-size: 1.5em;}
+
+div p, #id:first-line {background-color: red; border-radius: 3px;}
+div p {margin: 0; padding: 1em;}
+div p + p {padding-top: 0;}
+
+```
+>Warning: Though white space separates values in CSS declarations, property names never have white space.
+```
+margin: 0 auto;
+padding-left: 10px;
+```
+
+But these declaration are invalid.
+```
+margin: 0auto;
+padding- left: 10px;
+```
+>Do you see the spacing errors?
+>* First, 0auto is not recognized as a valid value for the margin property. The entry 0auto is meant to be two separate values: 0 and auto.
+>* Second, the browser does not recognize padding- as a valid property. The correct property name (padding-left) is separated by an errant space.
+
+You should always make sure to separate distinct values from one another by at least one space. Keep property names and property values together as single unbroken strings.
+
+To find out how spacing can break CSS, try playing with spacing inside your test CSS.
+
+
 
 |[Back to Top](#overview)|
 |-|
