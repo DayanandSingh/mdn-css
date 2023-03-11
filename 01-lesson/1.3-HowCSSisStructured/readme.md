@@ -433,12 +433,92 @@ li{
 }
 ```
 
+### Functions
+
+While most values are relatively simple keywords or numeric values, there are some values that take the form of a function.
+
+1. The calc() function
+
+An example would be the calc() function, which can do simple math within CSS:
+```
+<div class="outer"><div class="box">The inner box is 90% - 30px.</div></div>
+```
+CSS
+```
+.outer {
+  border: 5px solid black;
+}
+
+.box {
+  padding: 10px;
+  width: calc(90% - 30px);
+  background-color: rebeccapurple;
+  color: white;
+}
+```
+Render as: 
+![cal() function](./img/4-functions.png)
+
+>A function consists of the function name, and parentheses to enclose the values for the function. In the case of the calc() example above, the values define the width of this box to be 90% of the containing block width, minus 30 pixels. The result of the calculation isn't something that can be computed in advance and entered as a static value.
+
+### Transform functions
+
+Another example would be the various values for transform, such as rotate().
+```
+<div class="box"></div>
+```
+Css
+```
+.box {
+  margin: 30px;
+  width: 100px;
+  height: 100px;
+  background-color: rebeccapurple;
+  transform: rotate(0.8turn);
+}
+```
+The output: 
+![Transform Function](./img/5-transform-function.png)
+
+>Look up different values of properties listed below. Write CSS rules that apply styling to different HTML elements:
+>* [transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform)
+>* [background-image, in particular gradient values](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image)
+>* [color, in particular rgb and hsl values](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
+
+
+
 |[Back to Top](#overview)|
 |-|
 
 ---
 
 ## @rules
+
+CSS @rules (pronounced "at-rules") provide instruction for what CSS should perform or how it should behave. Some @rules are simple with just a keyword and a value. For example, @import imports a stylesheet into another CSS stylesheet:
+```
+@import "styles2.css";
+```
+
+>One common `@rule` that you are likely to encounter is `@media`, which is used to create media queries. Media queries use conditional logic for applying CSS styling.
+
+In the example below, the stylesheet defines a default pink background for the `<body>` element. However, a media query follows that defines a blue background if the browser viewport is wider than 30em.
+```
+body {
+  background-color: pink;
+}
+
+@media (min-width: 30em) {
+  body {
+    background-color: blue;
+  }
+}
+```
+>See if you can add a media query that changes styles based on the viewport width. Change the width of your browser window to see the result.
+
+
+
+
+
 
 
 |[Back to Top](#overview)|
