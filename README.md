@@ -13,7 +13,7 @@ Mozila Developer Network - CSS Styling the web
  
  ### 1.2 [Getting Started With CSS](./01-lesson/1.2-GettingStartedWithCSS/readme.md)
  
- ### 1.3 [How CSS IS Structured ]()
+ ### 1.3 [How CSS IS Structured ](./01-lesson/1.3-HowCSSisStructured/readme.md)
  
  ### 1.4 [How CSS Works]()
  
