@@ -1,0 +1,31 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #333;
+}
+h1{
+    font-size: 5rem;
+    color: burlywood;
+    background-color: #000;
+    border: red solid 3px;
+    width: 50%;
+}
+p{
+    font-size: 3rem;
+    color: gold;
+    background-color: yellowgreen;
+    border: blueviolet double 4px;
+    width: 90vw;
+}
+ul{
+    font-size: 2rem;
+    color: aqua;
+    background-color: black;
+    border: yellow dashed 5px;
+    width: 500px;
+}
+li{
+    list-style-type: decimal;
+    background-color: blue;
+    border: red ridge 10px;
+    width: max-content;
+}

@@ -176,9 +176,162 @@ When you find CSS that you want to experiment with, replace the HTML `<body>` co
 
 ## Selectors
 
+A selector targets HTML to apply styles to content. We have already discovered a variety of selectors in the Getting started with CSS tutorial. If CSS is not applying to content as expected, your selector may not match the way you think it should match.
 
+>Each CSS rule starts with a selector — or a list of selectors — in order to tell the browser which element or elements the rules should apply to.      
 
+All the examples below are valid selectors or lists of selectors.
+```
+h1
+a:link
+.manythings
+#onething
+*
+.box p
+.box p:first-child
+h1, h2, .intro
+```
+>* `a:link{css declarations;}`      
+The `:link` selector is used to select unvisited links.     
+Note: The `:link` selector does not style links you have already visited.
+>* `.box p:first-child{}`   
+The `:first-child` CSS pseudo-class represents the first element among a group of sibling elements.     
+The `:first-child` selector is used to select the specified selector, only if it is the first child of its parent
 
+My Code HTML :  
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>My CSS experiments</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>this is heading1 or ' h1 '</h1>
+    <a href="readme.md">Readme &lt; a &gt;</a>
+    <ul class="manythings">
+        <li>milk</li>
+        <li>butter</li>
+        <li>ColdDrinks</li>
+        <li>soda</li>
+    </ul>
+    <section class="box">
+        
+        <p>Having Some</p>
+        <p>No, lots of Fun</p>
+            <ol>
+                <li>first child</li>
+                <li>second</li>
+                <li>3rd</li>
+            </ol>
+        <h2>h2 or heading two</h2>
+        
+        
+    </section>
+    <article>
+        <p class="intro">I am a learner</p>
+    </article>
+    <p id="onething">Create your test HTML here</p>
+  </body>
+</html>
+```
+
+My CSS Code : 
+```
+/* Create your test CSS here */
+
+/*ToDo: ' *{} ' Global Selector  */
+*{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+}
+
+/*ToDo: ' h1{} ' Heading selector  */
+h1{
+  color: whitesmoke;
+  background-color: #333;
+}
+
+/*ToDo: ' a:link{} ' unvisited links  */
+a:link{
+  color: #333;
+  background-color: gold;
+}
+
+/*Todo: ' .manythings{} ' class Selector  */
+.manythings{
+  color: yellowgreen;
+}
+
+/*ToDo: ' #onething{} ' id Selector  */
+#onething{
+  color: blue;
+  font-style: oblique;
+  font-size: 2rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*ToDo: ' .box p{} '   */
+.box p{
+  color: aqua;
+}
+
+/*Todo: ' .box p:first-child '   */
+.box p:first-child{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 3rem;
+  color: lime;
+}
+
+/*ToDo: ' h1, h2, .intro{} '   */
+h1,h2,.intro{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-style: italic;
+  font-size: 5rem;
+}
+```
+
+### Specificity
+
+You may encounter scenarios where two selectors select the same HTML element. Consider the stylesheet below, with a `p` selector that sets paragraph text to blue. However, there is also a `class` that sets the text of selected elements to red.     
+```
+.special {
+  color: red;
+}
+
+p {
+  color: blue;
+}
+```
+
+>Suppose that in our HTML document, we have a paragraph with a class of `special`. Both rules apply.    
+ Which selector prevails? Do you expect to see blue or red paragraph text?
+ ```
+ <p class="special">What color am I?</p>
+ ```
+
+ >The CSS language has rules to control which selector is stronger in the event of a conflict. These rules are called `cascade` and `specificity`.      
+ In the code block below, we define two rules for the p selector, but the paragraph text will be blue.      
+ This is because the declaration that sets the paragraph text to blue appears later in the stylesheet. Later styles replace conflicting styles that appear earlier in the stylesheet. This is the cascade rule.     
+ ```
+p {
+  color: red;
+}
+
+p {
+  color: blue;
+}
+ ```
+
+> However, in the case of our earlier example with the conflict between the class selector and the element selector, the class prevails, rendering the paragraph text red.      
+ How can this happen even though a conflicting style appears later in the stylesheet?       
+ A class is rated as being more specific, as in having more specificity than the element selector, so it cancels the other conflicting style declaration.
+
+Try this experiment for yourself! Add HTML, then add the two p { } rules to your stylesheet. Next, change the first p selector to .special to see how it changes the styling.
+
+For now, remember that specificity exists. Sometimes, CSS might not apply as you expected because something else in the stylesheet has more specificity. Recognizing that more than one rule could apply to an element is the first step in fixing these kinds of issues.
 
 
 |[Back to Top](#overview)|
@@ -187,6 +340,98 @@ When you find CSS that you want to experiment with, replace the HTML `<body>` co
 ---
 
 ## Properties And Values
+
+At its most basic level, CSS consists of two components:
+
+* Properties: These are human-readable identifiers that indicate which stylistic features you want to modify. For example, font-size, width, background-color.
+* Values: Each property is assigned a value. This value indicates how to style the property.
+
+The example below highlights a single property and value. The property name is color and the value is blue.
+![PropertiesAnd Values](./img/1-properties-and-value.png)
+When a property is paired with a value, this pairing is called a CSS declaration. CSS declarations are found within CSS Declaration Blocks.     
+In the example below, highlighting identifies the CSS declaration block.
+![PropertiesAnd Values](./img/2-properties-and-value.png)
+
+Finally, CSS declaration blocks are paired with selectors to produce CSS rulesets (or CSS rules).   
+The example below contains two rules:   
+one for the h1 selector and one for the p selector. The colored highlighting identifies the h1 rule.
+![PropertiesAnd Values](./img/3-properties-and-value.png)
+
+Setting CSS properties to specific values is the primary way of defining layout and styling for a document. The CSS engine calculates which declarations apply to every single element of a page.
+
+>CSS properties and values are case-insensitive. The property and value in a property-value pair are separated by a colon (:).
+
+>Note :
+>* Warning: If a property is unknown, or if a value is not valid for a given property, the declaration is processed as invalid. It is completely ignored by the browser's CSS engine.
+>* Warning: In CSS (and other web standards), it has been agreed that US spelling is the standard where there is language variation or uncertainty. For example, colour should be spelled color, as colour will not work.
+
+Todo :-
+>Look up different values of properties listed below. Write CSS rules that apply styling to different HTML elements:
+>
+>* font-size
+>* width
+>* background-color
+>* color
+>* border
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties AND VAlues</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Properties and VAlues</h1>
+    <p>
+        Look up different values of properties listed below. Write CSS rules that apply styling to different HTML elements:
+    </p>
+    <ul>
+        <li>font-size</li>
+        <li>width</li>
+        <li>backgroung-color</li>
+        <li>color</li>
+        <li>border</li>
+    </ul>
+</body>
+</html>
+```
+Css
+```
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #333;
+}
+h1{
+    font-size: 5rem;
+    color: burlywood;
+    background-color: #000;
+    border: red solid 3px;
+    width: 50%;
+}
+p{
+    font-size: 3rem;
+    color: gold;
+    background-color: yellowgreen;
+    border: blueviolet double 4px;
+    width: 90vw;
+}
+ul{
+    font-size: 2rem;
+    color: aqua;
+    background-color: black;
+    border: yellow dashed 5px;
+    width: 500px;
+}
+li{
+    list-style-type: decimal;
+    background-color: blue;
+    border: red ridge 10px;
+    width: max-content;
+}
+```
 
 |[Back to Top](#overview)|
 |-|
