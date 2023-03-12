@@ -32,12 +32,25 @@ Bear in mind that this is a very simplified version of what happens when a brows
 5. The render tree is laid out in the structure it should appear in after the rules have been applied to it.
 6. The visual display of the page is shown on the screen (this stage is called painting).
 
+The following diagram also offers a simple view of the process.
+![HowCSSIsWorks](./img/1-how-css-works.png)
+
+
 |[Back to Top](#overview)|
 |-|
 
 ---
 
 ## About the DOM
+
+A DOM has a tree-like structure. Each element, attribute, and piece of text in the markup language becomes a DOM node in the tree structure.    
+>The nodes are defined by their relationship to other DOM nodes. Some elements are parents of child nodes, and child nodes have siblings.
+
+Understanding the DOM helps you design, debug and maintain your CSS because the DOM is where your CSS and the document's content meet up. When you start working with browser DevTools you will be navigating the DOM as you select items in order to see which rules apply.
+
+>Node (DOM) :-    
+In the context of the DOM, a node is a single point in the node tree. Various things that are nodes are the document itself, elements, text, and comments.
+
 
 
 |[Back to Top](#overview)|
