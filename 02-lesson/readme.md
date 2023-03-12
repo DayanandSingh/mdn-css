@@ -107,11 +107,11 @@ The following assessments will test your understanding of the CSS covered in the
 
 This assessment tests your understanding of basic syntax, selectors, specificity, box model, and more.
 
-### [18. Creating fancy letterheaded paper](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Creating_fancy_letterheaded_paper)
+### [19. Creating fancy letterheaded paper](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Creating_fancy_letterheaded_paper)
 
 If you want to make the right impression, writing a letter on nice letterheaded paper can be a really good start. In this assessment, we'll challenge you to create an online template to achieve such a look.
 
-### [18. A cool looking box](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/A_cool_looking_box)
+### [20. A cool looking box](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/A_cool_looking_box)
 
 Here you'll get some practice in using background and border styling to create an eye-catching box.
 
