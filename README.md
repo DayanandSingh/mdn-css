@@ -15,7 +15,7 @@ Mozila Developer Network - CSS Styling the web
  
  ### 1.3 [How CSS IS Structured ](./01-lesson/1.3-HowCSSisStructured/readme.md)
  
- ### 1.4 [How CSS Works]()
+ ### 1.4 [How CSS Works](./01-lesson/1.4-HowCSSwork/readme.md)
  
  ### 1.5 [Assessment - Styling a Biography Page]()
 
