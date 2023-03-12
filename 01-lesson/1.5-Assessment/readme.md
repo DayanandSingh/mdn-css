@@ -90,6 +90,12 @@ a:hover {
 
 ## 3. Hints And tips
 
+* Use the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) to catch unintended mistakes in your CSS — mistakes you might have otherwise missed — so that you can fix them.
+* Afterwards try looking up some properties not mentioned on this page in the [MDN CSS reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) and get adventurous!
+* Remember that there is no wrong answer here — at this stage in your learning you can afford to have a bit of fun.
+
+
+
 |[Back to Top](#overview)|
 |-|
 
@@ -97,12 +103,29 @@ a:hover {
 
 ## 4. Example
 
+You should end up with something like this image.
+
+![ExampleResult](./img/1.png)
+
+![Before](./img/2.png)
+
+[My CSS Source](style.css)
+
 |[Back to Top](#overview)|
 |-|
 
 ---
 
 ## 5. Assessment or Further help
+
+If you would like your work assessed or are stuck and want to ask for help:
+
+1. Put your work into an online shareable editor such as CodePen, jsFiddle, or Glitch.
+2. Write a post asking for assessment and/or help at the MDN Discourse forum Learning category. Your post should include:
+    * A descriptive title such as "Assessment wanted for Styling a biography page".
+    * Details of what you have already tried and what you would like us to do; for example, tell us if you're stuck and need help or want an assessment.
+    * A link to the example you want assessed or need help with, in an online shareable editor (as mentioned in step 1 above). This is a good practice to get into — it's very hard to help someone with a coding problem if you can't see their code.
+    * A link to the actual task or assessment page, so we can find the question you want help with.
 
 |[Back to Top](#overview)|
 |-|
