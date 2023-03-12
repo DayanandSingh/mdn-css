@@ -23,7 +23,7 @@ Mozila Developer Network - CSS Styling the web
 
 ## 02 Lesson CSS Building Blocks 
 
-### [Overview]()
+### [Overview](./02-lesson/readme.md)
 
 ### 2.1 [CSS Selectors]()
 
