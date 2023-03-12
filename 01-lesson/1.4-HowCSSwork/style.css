@@ -17,7 +17,7 @@ h1,h2{
     padding: 10px;
     margin: 50px;
     display: flex;
-    position: sticky;
+    /* position: sticky;  *//*!Not Working*/
     
 }
 a{
@@ -38,6 +38,12 @@ ul{
     margin: 50px;
     
 }
+li{
+    font-size: 2rem; 
+    border: 1px solid gold;
+    padding: 20px;
+    margin: 50px;
+}
 section{
     border: yellow solid 2px;
 }
@@ -45,4 +51,10 @@ section h2{
     color: lime;
     font-family: 'Times New Roman', Times, serif;
     font-size: 3rem;
+}
+ol{
+    list-style-type: decimal;
+    background-color: goldenrod;
+    padding: 20px;
+    margin: 50px;
 }
